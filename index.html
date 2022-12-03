@@ -1,255 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Cmandi</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Cmandi</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+      <div class="collapse navbar-collapse grid" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto col-8">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 d-flex col-4">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
 
-<body>
-	<nav class="navbar bg-light navbar-expand-lg">
-		<div class="container-fluid d-flex justify-content-between">
-			<a class="navbar-brand" href="#">
-				<img src="https://www.zoom.com.tn/img/zoom-informatique-logo-1503561020.jpg" alt="Logo" width="30"
-					height="24" class="d-inline-block align-text-top" />
-				Cmandini
-			</a>
-			<a class="navbar-brand" href="#">Nos magasins</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Dropdown
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li>
-								<hr class="dropdown-divider" />
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Something else here</a>
-							</li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled">Disabled</a>
-					</li>
-				</ul>
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-					<button class="btn btn-outline-success" type="submit">
-						Search
-					</button>
-				</form>
-			</div>
-		</div>
-	</nav>
-	<ul class="nav nav-tabs">
-		<li class="nav-item">
-			<a class="nav-link" aria-current="page" href="#">Home</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle active" onclick="setActive(this.id)" id="InformatiqueTab"
-				data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Informatique</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="pageInformatique.html">Ordinateurs portables</a></li>
-				<li><a class="dropdown-item" href="#">Ordinateurs bureau</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Logiciels</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Composant Informatique</a></li>
-				<li><a class="dropdown-item" href="#">Perepheriques et accessoires</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Reseaux</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" onclick="setActive(this.id)" id="TelephonieTab"
-				data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Telephonie</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Smartphone</a></li>
-				<li><a class="dropdown-item" href="#">Tablette</a></li>
-				<li><a class="dropdown-item" href="#">Telephone fixe</a></li>
-				<li><a class="dropdown-item" href="#">Accessoires telephonie</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-				aria-expanded="false">Electromenager</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Petit Electromenager</a></li>
-				<li><a class="dropdown-item" href="#">Grand Electromenager</a></li>
-				<li><a class="dropdown-item" href="#">Appareil de cuisson</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Climatisation & Chauffage</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-				aria-expanded="false">Mode beauté et santé</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-				aria-expanded="false">Mode beauté et santé</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-				aria-expanded="false">Mode beauté et santé</a>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li>
-					<hr class="dropdown-divider" />
-				</li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link disabled">Disabled</a>
-		</li>
-	</ul>
-	<div class="tab-content" id="nav-tabContent">
-		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
-			tabindex="0">
-			...
-		</div>
-		<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-			...
-		</div>
-		<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-			...
-		</div>
-		<div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-			...
-		</div>
-	</div>
-	<!-- Carousel -->
-	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active" data-bs-interval="10000">
-				<img src="https://www.zoom.com.tn/modules/eratabcontentslider/uploads/Y90.jpg" class="d-block w-100"
-					alt="..." />
-			</div>
-			<div class="carousel-item" data-bs-interval="2000">
-				<img src="https://www.zoom.com.tn/modules/eratabcontentslider/uploads/DDD.jpg" class="d-block w-100"
-					alt="..." />
-			</div>
-			<div class="carousel-item">
-				<img src="https://www.zoom.com.tn/modules/eratabcontentslider/uploads/sz4t58gb.png"
-					class="d-block w-100" alt="..." />
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-			data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-			data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-	<br />
-	<br />
-	<div>
-		<div class="card" style="width: 18rem">
-			<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-				role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-				<title>Placeholder</title>
-				<rect width="100%" height="100%" fill="#868e96"></rect>
-				<text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-			</svg>
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">
-					Some quick example text to build on the card title and make up the
-					bulk of the card's content.
-				</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			</div>
-		</div>
-	</div>
-	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-		crossorigin="anonymous"></script>
-	<script>
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+            width="800"
+            height="400"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: First slide"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect>
+            <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+          </svg>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+            width="800"
+            height="400"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Second slide"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#666"></rect>
+            <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+          </svg>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+            width="800"
+            height="400"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: Third slide"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#555"></rect>
+            <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+          </svg>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <br />
+    <div class="container col-md-5">
+      <input type="text" class="form-control" id="search" onkeyup="search()" placeholder="Search for names..">
+    </div>
 
-		let getSiblings = function (e) {
-			// for collecting siblings
-			let siblings = [];
-			// if no parent, return no sibling
-			if (!e.parentNode) {
-				return siblings;
-			}
-			// first child of the parent node
-			let sibling = e.parentNode.firstChild;
-			// collecting siblings
-			while (sibling) {
-				if (sibling.nodeType === 1 && sibling !== e) {
-					siblings.push(sibling);
-				}
-				sibling = sibling.nextSibling;
-			}
-			return siblings;
-		};
-		function setActive(id) {
-			fetch('https://dummyjson.com/products')
-				.then(res => res.json())
-				.then(console.log);
-		}
-	</script>
-</body>
+    <div id="cards" class="container row mx-auto">
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-black mt-4">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
 
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example21"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-secondary mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
+            sequi voluptate quas.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-black">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-black">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-black">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-black">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-black">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-black" href="#">WhiteHatTeam</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
   <title>Cmandi</title>
 </head>
 
-<body onload="index()">
+<body onload="produits()">
   <!-- First navbar starts here -->
   <nav class="navbar bg-light navbar-expand-lg">
     <div class="container-fluid d-flex justify-content-between">
@@ -26,10 +27,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="produits.html">Nos produits</a>
+            <a class="nav-link active" aria-current="page" href="produits.html">Nos produits</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Nos magasins</a>
@@ -57,35 +58,56 @@
     </div>
   </nav>
   <!-- First navbar ends here -->
-  <!-- Carousel -->
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="7000">
-        <img src="images\1920x515---ryzen-7--VER-01.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item" data-bs-interval="7000">
-        <img src="images\cooler-master.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item" data-bs-interval="7000">
-        <img src="images\instax-11.jpg" class="d-block w-100" alt="..." />
-      </div>
+  <!-- Second navbar starts here -->
+  <div class="m-3">
+    <ul class="nav nav-tabs justify-content-center" id="myTab">
+      <li class="nav-item">
+        <a href="#laptops" class="nav-link active" data-bs-toggle="tab">Laptops</a>
+      </li>
+      <li class="nav-item">
+        <a href="#smartphones" class="nav-link" data-bs-toggle="tab">Smartphones</a>
+      </li>
+      <li class="nav-item">
+        <a href="#clothing" class="nav-link" data-bs-toggle="tab">Clothing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#accessories" class="nav-link" data-bs-toggle="tab">Accessories</a>
+      </li>
+      <li class="nav-item">
+        <a href="#vehicules" class="nav-link" data-bs-toggle="tab">Vehicules</a>
+      </li>
+      <li class="nav-item">
+        <a href="#maison" class="nav-link" data-bs-toggle="tab">Maison</a>
+      </li>
+      <li class="nav-item">
+        <a href="#beaute" class="nav-link" data-bs-toggle="tab">Beaute</a>
+      </li>
+      <li class="nav-item">
+        <a href="#grocerie" class="nav-link" data-bs-toggle="tab">Grocerie</a>
+      </li>
+    </ul>
+    <div id="cards" class="tab-content">
+      <div class="container row mx-auto tab-pane fade show active" id="laptops"></div>
+      <div class="container row mx-auto tab-pane fade" id="smartphones"></div>
+      <div class="container row mx-auto tab-pane fade" id="clothing"></div>
+      <div class="container row mx-auto tab-pane fade" id="accessories"></div>
+      <div class="container row mx-auto tab-pane fade" id="vehicules"></div>
+      <div class="container row mx-auto tab-pane fade" id="maison"></div>
+      <div class="container row mx-auto tab-pane fade" id="accessories"></div>
+      <div class="container row mx-auto tab-pane fade" id="beaute"></div>
+      <div class="container row mx-auto tab-pane fade" id="grocerie"></div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <!-- <div id="cards"></div> -->
   </div>
-  <!-- End of Carousel -->
-  <br><br>
+  <!-- Second navbar ends here -->
+  <br />
+  <br />
   <!-- <div class="container col-md-5">
     <input type="text" class="form-control" id="search" onkeyup="search()" placeholder="Search for names..">
   </div> -->
 
-  <div id="cards" class="container row mx-auto"></div>
+  <!-- <div id="cards" class="container row mx-auto"> -->
+  </div>
   <!-- Footer -->
   <footer class="bg-light text-center text-black mt-4">
     <!-- Grid container -->
@@ -256,22 +278,22 @@
     </div>
     <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 Copyright:
-        <a class="text-black" href="#">WhiteHatTeam</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-black" href="#">WhiteHatTeam</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="data.js"></script>
 </body>
 
 </html>

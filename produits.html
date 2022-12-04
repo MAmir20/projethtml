@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
   <title>Cmandi</title>
 </head>
 
@@ -40,14 +41,18 @@
         </ul>
         <div>
           <button type="button" class="btn btn-outline-success mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+              </path>
             </svg>
             Panier
           </button>
         </div>
         <div>
-          <input type="text" class="form-control" id="search" onkeyup="search()" placeholder="Rechercher des produits...">
+          <input type="text" class="form-control" id="search" onkeyup="search()"
+            placeholder="Rechercher des produits...">
         </div>
       </div>
     </div>
@@ -56,41 +61,41 @@
   <!-- Second navbar starts here -->
   <div class="m-3">
     <ul class="nav nav-tabs justify-content-center" id="myTab">
-        <li class="nav-item">
-            <a href="#laptops" class="nav-link active" data-bs-toggle="tab">Laptops</a>
-        </li>
-        <li class="nav-item">
-            <a href="#smartphones" class="nav-link" data-bs-toggle="tab">Smartphones</a>
-        </li>
-        <li class="nav-item">
-          <a href="#clothing" class="nav-link" data-bs-toggle="tab">Clothing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#accessories" class="nav-link" data-bs-toggle="tab">Accessories</a>
-        </li>
-        <li class="nav-item">
-          <a href="#vehicules" class="nav-link" data-bs-toggle="tab">Vehicules</a>
-        </li>
-        <li class="nav-item">
-            <a href="#maison" class="nav-link" data-bs-toggle="tab">Maison</a>
-        </li>
-        <li class="nav-item">
-          <a href="#beaute" class="nav-link" data-bs-toggle="tab">Beaute</a>
+      <li class="nav-item">
+        <a href="#laptops" class="nav-link active" data-bs-toggle="tab">Laptops</a>
+      </li>
+      <li class="nav-item">
+        <a href="#smartphones" class="nav-link" data-bs-toggle="tab">Smartphones</a>
+      </li>
+      <li class="nav-item">
+        <a href="#clothing" class="nav-link" data-bs-toggle="tab">Clothing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#accessories" class="nav-link" data-bs-toggle="tab">Accessories</a>
+      </li>
+      <li class="nav-item">
+        <a href="#vehicules" class="nav-link" data-bs-toggle="tab">Vehicules</a>
+      </li>
+      <li class="nav-item">
+        <a href="#maison" class="nav-link" data-bs-toggle="tab">Maison</a>
+      </li>
+      <li class="nav-item">
+        <a href="#beaute" class="nav-link" data-bs-toggle="tab">Beaute</a>
       </li>
       <li class="nav-item">
         <a href="#grocerie" class="nav-link" data-bs-toggle="tab">Grocerie</a>
       </li>
     </ul>
-    <div id = "cards" class="tab-content">
-        <div class="container row mx-auto tab-pane fade show active" id="laptops"></div>
-        <div class="container row mx-auto tab-pane fade" id="smartphones"></div>
-        <div class="container row mx-auto tab-pane fade" id="clothing"></div>
-        <div class="container row mx-auto tab-pane fade" id="accessories"></div>
-        <div class="container row mx-auto tab-pane fade" id="vehicules"></div>
-        <div class="container row mx-auto tab-pane fade" id="maison"></div>
-        <div class="container row mx-auto tab-pane fade" id="accessories"></div>
-        <div class="container row mx-auto tab-pane fade" id="beaute"></div>
-        <div class="container row mx-auto tab-pane fade" id="grocerie"></div>
+    <div id="cards" class="tab-content">
+      <div class="container row mx-auto tab-pane fade show active" id="laptops"></div>
+      <div class="container row mx-auto tab-pane fade" id="smartphones"></div>
+      <div class="container row mx-auto tab-pane fade" id="clothing"></div>
+      <div class="container row mx-auto tab-pane fade" id="accessories"></div>
+      <div class="container row mx-auto tab-pane fade" id="vehicules"></div>
+      <div class="container row mx-auto tab-pane fade" id="maison"></div>
+      <div class="container row mx-auto tab-pane fade" id="accessories"></div>
+      <div class="container row mx-auto tab-pane fade" id="beaute"></div>
+      <div class="container row mx-auto tab-pane fade" id="grocerie"></div>
     </div>
     <!-- <div id="cards"></div> -->
   </div>
@@ -288,6 +293,7 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.js"></script>
+  <script src="data.js"></script>
 </body>
 
 </html>

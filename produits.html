@@ -40,7 +40,7 @@
           </li>
         </ul>
         <div>
-          <button type="button" class="btn btn-outline-success mx-2">
+          <a  class="btn btn-outline-success mx-2" onmouseenter="toggle()" onmouseleave="toggle()"  onclick="affichePanier()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
               viewBox="0 0 16 16">
               <path
@@ -48,7 +48,9 @@
               </path>
             </svg>
             Panier
-          </button>
+          </a>
+          <div id="panel" class="p1 pt-2 bg-light">
+          </div>
         </div>
         <div>
           <input type="text" class="form-control" id="search" onkeyup="search()"
@@ -59,6 +61,8 @@
   </nav>
   <!-- First navbar ends here -->
   <!-- Second navbar starts here -->
+  <main>
+    <div id="carouselExampleInterval"></div>
   <div class="m-3">
     <ul class="nav nav-tabs justify-content-center" id="myTab">
       <li class="nav-item">
@@ -106,8 +110,56 @@
     <input type="text" class="form-control" id="search" onkeyup="search()" placeholder="Search for names..">
   </div> -->
 
-  <!-- <div id="cards" class="container row mx-auto"> -->
+
+  </main>
+  <div id="cards" class="container row mx-auto"> 
   </div>
+
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Order</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <form action = "#" onsubmit="order()">
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+            <div class="mb-3">
+              <label for="Nom">Name</label>
+              <input type="text" class="form-control" id="Nom" placeholder="Name" name="Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="tel">Phone Number</label>
+              <input type="tel" class="form-control" id="tel" placeholder="Phone Number" name="Phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="lieu">Shipment Location :</label>
+              <input type="text" class="form-control" id="lieu" placeholder="Shippment Location" name="Lieu" required>
+            </div>
+            <div class="mb-3 mt-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+                     
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-danger"  value = "Submit">
+          <input type="hidden" id="closed" class="btn btn-danger" data-bs-dismiss="modal" value = "Submit" > 
+        </div>
+      </form>
+  
+      </div>
+    </div>
+  </div>
+  
   <!-- Footer -->
   <footer class="bg-light text-center text-black mt-4">
     <!-- Grid container -->
